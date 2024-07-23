@@ -48,7 +48,7 @@ const Header = () => {
   if(!data1 || !data2) return <div>Hello</div>
 
   return (
-    <div className="flex  items-center w-full h-[65px] bg-zinc-800/30">
+    <div className="flex  items-center w-full h-[65px] bg-zinc-800/30 px-[20px]">
       <div className="w-[18%] text-center">
         <p className="text-[25px]">
           <span className="text-[45px] font-bold text-gray-600">A</span>nifusion
@@ -100,8 +100,8 @@ const Header = () => {
           </NavigationMenuList>
         </NavigationMenu>
       </div>
-      <div className="flex justify-center items-center w-[600px] ">
-        <div className="flex  justify-between items-center w-[500px] h-[35px] px-[10px] bg-zinc-800/30 Shadow rounded-[10px]">
+      <div className="flex justify-end items-end w-[600px] ">
+        <div className="flex  justify-between items-center w-[400px] h-[35px] px-[10px] bg-zinc-800/30 Shadow rounded-[10px]">
           <FontAwesomeIcon
             icon={faMagnifyingGlass}
             className={`text-[15px] transition duration-1000 ease ${focused ? "opacity-100" : "opacity-0"} `}
@@ -126,7 +126,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-end items-center gap-[10px] text-xl h-[35px] w-[450px]">
+      <div className="flex justify-end items-center gap-[10px] text-xl h-[35px] w-[400px]">
         <Button size={"icon"} variant={"outline"}><FontAwesomeIcon icon={faShuffle}/></Button>
         <Toggle />
       </div>
